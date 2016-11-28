@@ -1,0 +1,74 @@
+/* header */
+header {
+  background-color: $cor-header;
+  border-bottom: 1px solid $bordas-footer;
+  height: 50px; }
+
+.logo-company {
+  width: 118px;
+  height: 100px;
+  background-color: #fff;
+  float: left; 
+  @include shadow-logo;
+}
+
+.main-menu {
+  padding-top: 12px;
+  margin-left: 20px;
+  float: left; }
+
+.main-menu ul, .breadcrumb ul {
+  list-style: none; }
+
+.main-menu ul li {
+  float: left;
+  padding: 5px 0; }
+
+.main-menu ul li + li {
+  border-left: solid 1px $bordas-footer; }
+
+.main-menu ul li a {
+  font-weight: 600;
+  color: $texto-principal;
+  padding: 0 20px;
+  text-decoration: none; }
+
+.breadcrumb {
+  position: absolute;
+  left: 140px;
+  top: 65px;
+  z-index: 100; }
+
+.breadcrumb ul {
+  list-style: none; }
+
+.breadcrumb li {
+  float: left;
+  padding-right: 5px; }
+
+.breadcrumb li a {
+  font-size: 12px;
+  color: $texto-principal;
+  text-decoration: none; }
+
+.breadcrumb li a:after {
+  font-family: 'font-icones' !important;
+  content: '\e972';
+  padding-left: 5px; }
+
+.breadcrumb li:last-child a:after {
+  content: none; }
+
+.button-header {
+  background-color: $cor-secundaria;
+  padding: 6px 24px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  float: right;
+  margin: 12px 0; }
+
+.button-header span.icon-seta {
+  color: #fff;
+  font-size: $fontsize-padrao; }

@@ -1,0 +1,50 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Segundo Desafio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script type="text/javascript" src="assets/js/angular.min.js"></script>
+        <script type="text/javascript" src="assets/js/script.js"></script>
+    </head>
+
+    <body ng-app="formContatos">
+        <div class="container" ng-controller="ContatoController">
+            <section>
+                <h1>Formulário de Contato</h1>
+                <form ng-submit="" class="todo-form">
+                    <div>
+                        <label for="nome">Nome* <span ng-show="mensagemNome">(Este campo é obrigatório)</span></label>
+                        <input type="text" ng-model="nome" ng-blur="validaNome()" id="nome" class="campos" tabindex="1" />
+                    </div>
+                    <div>
+                        <label for="email">E-mail* <span ng-show="mensagemEmail">(Seu e-mail está incorreto)</span></label>
+                        <input type="text" ng-model="email" ng-blur="validaEmail()" id="email" tabindex="2" class="campos" />
+                    </div>
+                    <div>
+                        <label for="telefone">Telefone* <span ng-show="mensagemTelefone">(Este campo é obrigatório)</span></label>
+                        <input type="text" ng-model="telefone" id="telefone" ng-blur="validaTelefone()" tabindex="3" maxlength="15" class="campos" />
+                    </div>
+                    <input type="submit" ng-click="adicionaContato()" class="bt bt-gravar" value="Gravar" />
+                    <input type="submit" ng-click="limpar()" value="Limpar" class="bt bt-limpar" />
+                </form>
+                <ul>
+                    <li ng-repeat="data in lista">
+                        <div class="titulo-lista">
+                            <strong>{{ data.nome }}</strong>
+                        </div>
+                        <div class="conteudo-lista">
+                            {{ data.telefone }} - {{ data.email }}
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        
+    </body>
+</html>

@@ -1,0 +1,108 @@
+/* footer */
+footer {
+  background-color: $cor-header;
+  padding-top: 40px; }
+
+.menu-footer h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: $texto-principal;
+  border: none; }
+
+.menu-footer-1 {
+  margin-bottom: 40px; }
+
+.menu-footer-1 h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 20px 0;
+  color: $texto-principal; }
+
+.menu-footer-1 nav {
+  float: left;
+  margin-right: 54px; }
+
+.menu-footer-1 nav:last-child {
+  margin-right: 0; }
+
+.menu-footer-1 nav ul {
+  height: 100px; }
+
+.menu-footer-1 nav li {
+  margin-bottom: 5px; }
+
+.menu-footer-1 nav a {
+  font-size: 13px;
+  font-weight: 400;
+  color: $texto-principal;
+  text-decoration: none; }
+
+.menu-footer-1 nav a.link-all {
+  margin-top: 40px;
+  display: inline-block; }
+
+.menu-footer-1 nav a.link-all:after {
+  font-family: 'font-icones' !important;
+  content: '\e972';
+  padding-left: 10px; }
+
+.menu-footer-logos h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: $texto-principal;
+  margin-bottom: 30px;
+  padding: 0;
+  border: none; }
+
+.menu-footer-logos nav {
+  float: left; }
+
+.menu-footer-logos nav li {
+  margin-bottom: 20px; }
+
+.menu-footer-logos nav li:last-child {
+  margin-bottom: 0; }
+
+.menu-footer-2 {
+  padding: 30px 0;
+  margin: 30px 0;
+  border-top: 1px solid $bordas-footer; }
+
+.menu-footer-2 ul {
+  list-style: none; }
+
+.menu-footer-2 ul li {
+  float: left;
+  padding: 5px 0; }
+
+.menu-footer-2 ul li + li {
+  border-left: solid 1px $bordas-footer; }
+
+.menu-footer-2 ul li a {
+  font-weight: 400;
+  color: $texto-principal;
+  padding: 0 26px;
+  text-decoration: none;
+  font-size: 13px; }
+
+.menu-footer-2-left {
+  float: left; }
+
+.menu-footer-2-right {
+  float: right; }
+
+.menu-footer-2-left ul li:first-child a {
+  padding-left: 0; }
+
+.menu-footer-2-right ul li:last-child a {
+  padding-right: 0; }
+
+.copyright {
+  background-color: $bordas-footer;
+  padding: 30px 0 80px;
+  text-align: center; }
+
+.copyright p {
+  font-size: 13px;
+  color: $texto-principal;
+  line-height: 20px; }

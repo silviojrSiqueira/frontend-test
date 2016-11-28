@@ -1,0 +1,41 @@
+/* Banner */
+.banner {
+  margin-right: 10px; }
+
+.banner .navigation-banner {
+  display: table;
+  margin: 5px auto 0; }
+
+.banner .navigation-banner ul {
+  list-style: none; }
+
+.banner .navigation-banner li {
+  float: left;
+  margin: 0 10px; }
+
+.banner .navigation-banner a {
+  width: 10px;
+  height: 10px;
+  background-color: #b7b7b7;
+  display: block; }
+
+.banner .navigation-banner a:hover {
+  background-color: $cor-detalhe; }
+
+.banner img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  @include border-box;
+  border: 1px solid $bordas-footer; }
+
+.second-banner {
+  @include border-box;
+  border: 3px solid $cor-titulo-principal;
+  border-radius: 3px 3px 0 0;
+  margin-left: 10px;
+  height: 245px;
+  background-image: url(../images/nature-220x250.jpg);
+  display: inline-block;
+  background-size: cover;
+  width: 220px; }
